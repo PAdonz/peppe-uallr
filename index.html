@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PEPPE PAR A UALLR</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #39ff14;
+      font-family: 'Courier New', monospace;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    h1 {
+      font-size: 5rem;
+      text-shadow: 0 0 10px #39ff14, 0 0 30px #39ff14;
+      margin: 0;
+      z-index: 10;
+    }
+    .floating-text {
+      position: absolute;
+      font-size: 1.5rem;
+      color: #0ff;
+      font-weight: bold;
+      user-select: none;
+      animation: floatAnim 6s ease-in-out infinite;
+    }
+    .floating-text:nth-child(2) {
+      top: 10%;
+      left: 20%;
+      animation-delay: 0s;
+      color: #ff0040;
+    }
+    .floating-text:nth-child(3) {
+      top: 30%;
+      right: 15%;
+      animation-delay: 2s;
+      color: #ffdd00;
+    }
+    .floating-text:nth-child(4) {
+      bottom: 20%;
+      left: 25%;
+      animation-delay: 4s;
+      color: #00ffcc;
+    }
+    .floating-text:nth-child(5) {
+      bottom: 10%;
+      right: 30%;
+      animation-delay: 1s;
+      color: #ff66cc;
+    }
+    .floating-text:nth-child(6) {
+      top: 50%;
+      left: 45%;
+      animation-delay: 3s;
+      color: #39ff14;
+    }
+    @keyframes floatAnim {
+      0%, 100% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+      }
+      50% {
+        transform: translateY(-15px) translateX(15px);
+        opacity: 0.7;
+      }
+    }
+    .icons {
+      position: absolute;
+      font-size: 3rem;
+      animation: spin 10s linear infinite;
+      user-select: none;
+    }
+    .icon1 {
+      top: 5%;
+      left: 5%;
+      color: #1e90ff; /* Napoli blue */
+    }
+    .icon2 {
+      bottom: 5%;
+      right: 5%;
+      color: #1e90ff;
+      animation-direction: reverse;
+    }
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>PEPPE PAR A UALLR</h1>
+
+  <div class="floating-text" style="top: 15%; left: 10%; color: #ff4500;">SKIBIDIBOBBI</div>
+  <div class="floating-text" style="top: 25%; right: 20%; color: #ff69b4;">MCFRATM</div>
+  <div class="floating-text" style="bottom: 30%; left: 40%; color: #00fa9a;">ZUZUZU</div>
+  <div class="floating-text" style="bottom: 25%; right: 25%; color: #ffd700;">PEPPE 4 EVA</div>
+  <div class="floating-text" style="top: 45%; left: 50%; color: #7fffd4;">UALLR UALLR</div>
+
+  <!-- Napoli football icons -->
+  <div class="icons icon1">⚽️</div>
+  <div class="icons icon2">🦅</div>
+
+</body>
+</html>
